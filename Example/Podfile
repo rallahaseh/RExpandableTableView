@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RExpandableTableView_Example' do
+  pod 'RExpandableTableView', :path => '../'
+
+  target 'RExpandableTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
