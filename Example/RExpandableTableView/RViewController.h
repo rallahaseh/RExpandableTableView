@@ -8,6 +8,13 @@
 
 @import UIKit;
 
-@interface RViewController : UIViewController
+#import "RExpandableTableView.h"
+
+@interface RViewController : UIViewController {
+    NSMutableDictionary* data;
+}
+
+@property (weak, nonatomic) IBOutlet RExpandableTableView *tableView;
+
 
 @end
