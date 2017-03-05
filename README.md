@@ -22,7 +22,7 @@ pod "RExpandableTableView"
 
 ## Author
 
-rallahaseh, rashed.al-lahaseh@apprikot.com
+Rashed Al-Lahaseh, rallahaseh@gmail.com
 
 ## License
 
