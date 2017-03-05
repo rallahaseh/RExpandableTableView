@@ -1,27 +1,64 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YY4-uA-Con">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <scene sceneID="eeA-YA-ruj">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="RViewController" sceneMemberID="viewController">
+                <viewController id="YY4-uA-Con" customClass="RViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="LQq-2r-k37"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eog-Tj-vad"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="uNi-LP-Afc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RExpandable Table View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-pP-QeI">
+                                <rect key="frame" x="0.0" y="28" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7843137255" green="0.62745098040000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-cj-JOQ" customClass="RAExpandableTableView">
+                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Iri-cj-JOQ" secondAttribute="height" multiplier="375:611" id="aI2-8T-Bnz"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="YY4-uA-Con" id="SrT-mk-d1q"/>
+                                    <outlet property="delegate" destination="YY4-uA-Con" id="iLh-gO-Rsk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dbi-pP-QeI" secondAttribute="trailing" constant="-16" id="5y9-Kf-vxA"/>
+                            <constraint firstItem="Iri-cj-JOQ" firstAttribute="leading" secondItem="uNi-LP-Afc" secondAttribute="leadingMargin" constant="-16" id="bja-KX-etn"/>
+                            <constraint firstItem="Iri-cj-JOQ" firstAttribute="top" secondItem="dbi-pP-QeI" secondAttribute="bottom" constant="7.5" id="hoz-xC-vNJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iri-cj-JOQ" secondAttribute="trailing" constant="-16" id="iBn-9W-5ym"/>
+                            <constraint firstItem="Eog-Tj-vad" firstAttribute="top" secondItem="Iri-cj-JOQ" secondAttribute="bottom" id="lNH-wV-0Ex"/>
+                            <constraint firstItem="dbi-pP-QeI" firstAttribute="top" secondItem="LQq-2r-k37" secondAttribute="bottom" constant="8" id="n1W-nT-c4U"/>
+                            <constraint firstItem="dbi-pP-QeI" firstAttribute="leading" secondItem="uNi-LP-Afc" secondAttribute="leadingMargin" constant="-16" id="orC-gp-4OV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Iri-cj-JOQ" id="LgT-y8-vf2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsH-va-moK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
