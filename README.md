@@ -28,3 +28,4 @@ Rashed Al-Lahaseh, rallahaseh@gmail.com
 RExpandableTableView is available under the MIT license. See the LICENSE file for more info.
 
 ## Sample Screenshots
+![alt tag](http://imgur.com/a/N1BWp)
