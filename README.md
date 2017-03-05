@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/RExpandableTableView.svg?style=flat)](http://cocoapods.org/pods/RExpandableTableView)
 [![Platform](https://img.shields.io/cocoapods/p/RExpandableTableView.svg?style=flat)](http://cocoapods.org/pods/RExpandableTableView)
 
+RExpandableTableView is a UITableView subclass that gives you easy access to expandable and collapsable sections by just implementing a few more delegate and dataSource protocols. (iPhone, iPad, iOS)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -19,7 +19,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RExpandableTableView"
 ```
-
 ## Author
 
 Rashed Al-Lahaseh, rallahaseh@gmail.com
@@ -27,3 +26,5 @@ Rashed Al-Lahaseh, rallahaseh@gmail.com
 ## License
 
 RExpandableTableView is available under the MIT license. See the LICENSE file for more info.
+
+## Sample Screenshots
