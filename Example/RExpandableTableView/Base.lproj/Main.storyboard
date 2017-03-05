@@ -29,15 +29,15 @@
                                 <color key="textColor" red="0.7843137255" green="0.62745098040000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-cj-JOQ" customClass="RAExpandableTableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iri-cj-JOQ" customClass="RExpandableTableView">
                                 <rect key="frame" x="0.0" y="56" width="375" height="611"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Iri-cj-JOQ" secondAttribute="height" multiplier="375:611" id="aI2-8T-Bnz"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="YY4-uA-Con" id="SrT-mk-d1q"/>
-                                    <outlet property="delegate" destination="YY4-uA-Con" id="iLh-gO-Rsk"/>
+                                    <outlet property="dataSource" destination="YY4-uA-Con" id="ugq-Yd-g6J"/>
+                                    <outlet property="delegate" destination="YY4-uA-Con" id="XBr-p5-g6Y"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -54,6 +54,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Iri-cj-JOQ" id="LgT-y8-vf2"/>
+                        <outlet property="view" destination="uNi-LP-Afc" id="CNh-rr-9tK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WsH-va-moK" sceneMemberID="firstResponder"/>
